@@ -5,13 +5,13 @@ import Footer from "../components/Footer";
 const RootLayout = () => {
   return (
     <div>
-      <div className="fixed top-0 left-0 right-0 z-[20]">
+      <div className="">
         <Header />
       </div>
-      <div className="relative ml-[180px] overflow-y-auto top-[120px]">
+      <div className="">
         <Outlet />
       </div>
-      <div className="w-full">
+      <div className="">
         <Footer />
       </div>
     </div>

@@ -1,42 +1,28 @@
+import banner from "../../../assets/img/banner.png";
+import NavBar from "./components/NavBar";
+
 const Header = () => {
-  //nhúng taiwincss tạo file css Hỏi chat gpt nhúng @...
   return (
     <div>
-      <header class="mb-6 flex items-center justify-between">
-        <div class="flex items-center">
-          <img
-            src="https://storage.googleapis.com/a1aa/image/NXi02uF62EpVBp0ES04zjuGZErU4G22nDwUlg41VYmlTK17E.jpg"
-            alt="Company logo"
-            class="mr-4"
-            width="50"
-            height="50"
-          />
-          <h1 class="text-2xl font-bold">Nội Thất An Nam</h1>
+      <header className="flex flex-col items-center justify-center">
+        <div className="fixed z-50 bg-white shadow-md w-full h-[60px] px-[20px] top-0 flex items-center justify-between ">
+          <div className="flex justify-center items-center">
+            <img
+              src="https://storage.googleapis.com/a1aa/image/NXi02uF62EpVBp0ES04zjuGZErU4G22nDwUlg41VYmlTK17E.jpg"
+              alt="Company logo"
+              className="w-[50px] h-[50px]"
+            />
+            <h1 className="max-[640px]:text-[12px] ml-[10px] text-2xl font-bold text-red-700">
+              Nội Thất An Nam
+            </h1>
+          </div>
+          <div>
+            <NavBar />
+          </div>
         </div>
-        <nav>
-          <ul class="flex space-x-4">
-            <li>
-              <a href="#" class="text-blue-500">
-                Trang Chủ
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-500">
-                Giới Thiệu
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-500">
-                Sản Phẩm
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-blue-500">
-                Liên Hệ
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div className="pt-[60px]">
+          <img src={banner} alt="banner" />
+        </div>
       </header>
     </div>
   );
