@@ -77,8 +77,11 @@ const Home = () => {
     },
   ];
   return (
-    <div>
-      <marquee className="bg-blue-400 text-white py-[10px]" direction="">
+    <div className="px-[10px]">
+      <marquee
+        className="bg-blue-400 rounded-md text-white my-[15px] py-[10px]"
+        direction=""
+      >
         Welcome to website An Nam Noi That
       </marquee>
       <Swiper
@@ -91,18 +94,18 @@ const Home = () => {
         {content.map((item, index) => {
           return (
             <SwiperSlide key={index}>
-              <div class="relative flex flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-md relative grid min-h-[30rem] items-end overflow-hidden rounded-xl">
+              <div className="relative flex flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-md relative grid min-h-[30rem] items-end overflow-hidden rounded-xl">
                 <img
                   src={item.img}
                   alt="bg"
-                  class="absolute inset-0 h-full w-full object-cover object-center"
+                  className="absolute inset-0 h-full w-full object-cover object-center"
                 />
-                <div class="absolute inset-0 bg-black/70"></div>
-                <div class="p-6 relative flex flex-col justify-end">
-                  <h4 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-white">
+                <div className="absolute inset-0 bg-black/70"></div>
+                <div className="p-6 relative flex flex-col justify-end">
+                  <h4 className="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-white">
                     {item.title}
                   </h4>
-                  <p class="block antialiased font-sans text-base font-light leading-relaxed text-white my-2 font-normal">
+                  <p className="block antialiased font-sans text-base font-light leading-relaxed text-white my-2 font-normal">
                     {item.content}
                   </p>
                 </div>
@@ -111,7 +114,7 @@ const Home = () => {
           );
         })}
       </Swiper>
-      <h1 className="mt-[15px] py-[5px] bg-blue-400 text-white text-center">
+      <h1 className="mt-[15px] py-[5px] rounded-md bg-blue-400 text-white text-center">
         Các hạng mục và sản phẩm
       </h1>
       <div className="mt-[15px]">
@@ -125,18 +128,18 @@ const Home = () => {
           {product.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <div class="relative flex flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-md relative grid min-h-[30rem] items-end overflow-hidden rounded-xl">
+                <div className="relative flex flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-md relative grid min-h-[30rem] items-end overflow-hidden rounded-xl">
                   <img
                     src={item.img}
                     alt="bg"
-                    class="absolute inset-0 h-full w-full object-cover object-center"
+                    className="absolute inset-0 h-full w-full object-cover object-center"
                   />
-                  <div class="absolute inset-0 bg-black/70"></div>
-                  <div class="p-6 relative flex flex-col justify-end">
-                    <h4 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-white">
+                  <div className="absolute inset-0 bg-black/70"></div>
+                  <div className="p-6 relative flex flex-col justify-end">
+                    <h4 className="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-white">
                       {item.title}
                     </h4>
-                    <p class="block antialiased font-sans text-base font-light leading-relaxed text-white my-2 font-normal">
+                    <p className="block antialiased font-sans text-base font-light leading-relaxed text-white my-2 font-normal">
                       {item.content}
                     </p>
                   </div>
